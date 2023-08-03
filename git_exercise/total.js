@@ -1,4 +1,7 @@
 function total () {
-    const a = 2 , b = 3;
-    return a + b;
+  let total ;
+  let a = 2 , b = 3;
+  total = a + b ;
+  return total;
 }
+
