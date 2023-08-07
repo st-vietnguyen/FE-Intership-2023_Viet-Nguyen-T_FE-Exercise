@@ -1,275 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="home">
-            <header class="header">
-                <div class="logo">
-                    <a href="" class="logo-link">
-                        <img src="./images/logo.svg" alt="logo" class="logo-image" />
-                    </a>
-                    <span class="brand-name">E-Shop</span>
-                </div>
-                <nav class="nav-bar">
-                    <ul class="nav-menu">
-                        <li class="nav-item"><a href="">Men</a></li>
-                        <li class="nav-item"><a href="">Women</a></li>
-                        <li class="nav-item"><a href="">Kids</a></li>
-                    </ul>
-                </nav>
-                <div class="header-icons">
-                    <img src="./images/noun_Search_2102816 .svg" alt="">
-                    <img src="./images/noun_cart_2102832 .png" alt="">
-                    <img src="./images/noun_avatar_2102861.png" alt="">
-                </div>
-            </header>
-            <section class="banner">
-                <div class="overlay"></div>
-                <img src="./images/banner.png" alt="banner" class="banner-image" />
-                <div class="banner-title">
-                    <h1>Sale of the summer collection</h1>
-                    <a class="banner-link">
-                        <img class="banner-link-icon" />
-                        <span>Shop now</span>
-                    </a>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-logo">
+        <a href="/" class="header-logo-link">
+          <img src="./images/logo.svg" alt="logo" class="header-logo-image" />
+        </a>
+      </h1>
+      <nav class="nav-bar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-item-link" href="">Men</a></li>
+          <li class="nav-item"><a class="nav-item-link" href="">Women</a></li>
+          <li class="nav-item"><a class="nav-item-link" href="">Kids</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <i class="header-icon"></i>
+        <i class="header-icon"></i>
+        <i class="header-icon"></i>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section-banner">
+        <div class="overlay"></div>
+        <h2 class="section-title">Sale of the summer collection</h2>
 
-                <ul class="banner-service-list">
-                    <li class="banner-service-item">
-                        <div class="banner-service-icon"><i></i></div>
-                        <div class="banner-service-description">
-                            <h3 class="banner-service-title">Free shipping</h3>
-                            <span class="banner-service-text"
-                                >On purchase over $199</span
-                            >
-                        </div>
-                    </li>
-                    <li class="banner-service-item">
-                        <div class="banner-service-icon"><i></i></div>
-                        <div class="banner-service-description">
-                            <h3 class="banner-service-title">
-                                99% Satisfied Customers
-                            </h3>
-                            <span class="banner-service-text"
-                                >Our client's opinions speak for
-                                themselves</span
-                            >
-                        </div>
-                    </li>
-                    <li class="banner-service-item">
-                        <div class="banner-service-icon"><i></i></div>
-                        <div class="banner-service-description">
-                            <h3 class="banner-service-title">
-                                Originality Guaranteed
-                            </h3>
-                            <span class="banner-service-text"
-                                >30 days warranty for each product from our
-                                store</span
-                            >
-                        </div>
-                    </li>
-                </ul>
-            </section>
+        <a href="" class="shop-link">
+          <i class="icon icon-arrow"></i> Shop now
+        </a>
 
-            <section class="advertisement">
-                <div class="container">
-                    <div class="advertisement">
-                        <div class="advertisement-card">
-                            <h3 class="advertisement-title">
-                                New Arrivalsare now in!
-                            </h3>
-                            <a href="" class="advertisement-link"
-                                ><button class="advertisement-btn">
-                                    Show collection
-                                </button></a
-                            >
-                        </div>
-                        <div class="advertisement-card">
-                            <h3 class="advertisement-title">Basic t-shirts</h3>
-                            <a href="" class="advertisement-link"
-                                ><button class="advertisement-btn">
-                                    $29,99
-                                </button></a
-                            >
-                        </div>
-                        <div class="advertisement-card">
-                            <h3 class="advertisement-title">
-                                Sale this summer
-                            </h3>
-                            <a href="" class="advertisement-link"
-                                ><button class="advertisement-btn">
-                                    View All
-                                </button></a
-                            >
-                        </div>
-                    </div>
+        <div class="banner-benefit">
+          <ul class="benefit-list">
+            <li class="benefit-item">
+              <div class="benefit">
+                <i class="fa-solid fa-truck"></i>
+                <div class="benefit-content">
+                  <h4 class="benefit-title">Free shipping</h4>
+                  <p class="benefit-desc">On purchase over $199</p>
                 </div>
-            </section>
-            <section class="products">
-                <div class="container">
-                    <div class="product-header">
-                        <h2 class="section-title">Selected just for you</h2>
-                        <button class="product-btn">Show more</button>
-                    </div>
-                    <ul class="product-list">
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                    </ul>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit">
+                <i class="fa-regular fa-face-smile"></i>
+                <div class="benefit-content">
+                  <h4 class="benefit-title">99% Satisfied Customers</h4>
+                  <p class="benefit-desc">
+                    Our client's opinions speak for themselves
+                  </p>
                 </div>
-            </section>
-            <section class="services">
-                <h2 class="section-title">Why should you choose us</h2>
-                <ul class="service-list">
-                    <li class="service-item">
-                        <img src="" alt="" />
-                        <h4 class="service-name">Free shipping</h4>
-                        <p class="service-description">
-                            All purchases over $199 are eligible forfree
-                            shipping via USPS First Class Mail.
-                        </p>
-                    </li>
-                    <li class="service-item">
-                        <img src="" alt="" />
-                        <h4 class="service-name">Free shipping</h4>
-                        <p class="service-description">
-                            All payments are processed instantlyover a secure
-                            payment protocol.
-                        </p>
-                    </li>
-                    <li class="service-item">
-                        <img src="" alt="" />
-                        <h4 class="service-name">Free shipping</h4>
-                        <p class="service-description">
-                            If an item arrived damaged or you'vechanged your
-                            mind, you can send itback for a full refund.
-                        </p>
-                    </li>
-                    <li class="service-item">
-                        <img src="" alt="" />
-                        <h4 class="service-name">Free shipping</h4>
-                        <p class="service-description">
-                            Designed to last, each of our products hasbeen
-                            crafted with the finest materials.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section class="products">
-                <div class="container">
-                    <div class="product-header">
-                        <h2 class="section-title">Selected just for you</h2>
-                        <button class="product-btn">Show more</button>
-                    </div>
-                    <ul class="product-list">
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                        <li class="product-item">
-                            <img src="" alt="" class="product-image" />
-                            <h4 class="product-name">T-shirt Summer Vibes</h4>
-                            <span class="product-price">#79.89</span>
-                        </li>
-                    </ul>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit">
+                <img src="./images/dolar.svg" alt="" class="benefit-icon" />
+                <div class="benefit-content">
+                  <h4 class="benefit-title">Originality Guaranteed</h4>
+                  <p class="benefit-desc">
+                    30 days warranty for each product from our store
+                  </p>
                 </div>
-            </section>
-            <div class="newsletter">
-                <img src="./images/newsletter-image.png" class="newsletter-image" alt="">
-                <div class="newsletter-content container">
-                    <h3 class="newsletter-text">
-                        Subcribe to our newsletter andreceive exclusive offers
-                        every week
-                    </h3>
-                    <input type="text" class="newsletter-input" />
-                    <button class="newsletter-btn">Subcribe</button>
-                </div>
-            </div>
-            <footer class="footer">
-                <div class="footer-top container">
-                    <div class="shop-info">
-                        <div class="shop-info-header">
-                            <img src="" alt="logo" class="brand-image"/>
-                            <p class="brand-name">E-Shop</p>
-                        </div>
-                        <p class="shop-info-description">
-                            House My Brand designs clothing for the young, the
-                            old &everyone in between – but most importantly, for
-                            the fashionable
-                        </p>
-                        <div class="socials">
-                            <i class="social-icon"><a href="" class="social-link"></a></i>
-                            <i class="social-icon"><a href="" class="social-link"></a></i>
-                            <i class="social-icon"><a href="" class="social-link"></a></i>
-                            <i class="social-icon"><a href="" class="social-link"></a></i>
-                            <i class="social-icon"><a href="" class="social-link"></a></i>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h4 class="footer-col-title">Shopping online</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item">Oder Status</li>
-                            <li class="footer-item">shipping and Delivery</li>
-                            <li class="footer-item">Returns</li>
-                            <li class="footer-item">Payment Options</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4 class="footer-col-title">Information</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item">Gift Cards</li>
-                            <li class="footer-item">Find a store</li>
-                            <li class="footer-item">Newsletter</li>
-                            <li class="footer-item">Bacome a member</li>
-                            <li class="footer-item">Site feedback</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4 class="footer-col-title">Contact</h4>
-                        <ul class="footer-list">
-                            <li class="footer-item">store@uikit.com</li>
-                            <li class="footer-item">Hotline: +1 131 138 138</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <span class="copyright">
-                        DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.
-                    </span>
-                </div>
-            </footer>
+              </div>
+            </li>
+          </ul>
         </div>
-    </body>
+      </section>
+
+      <section class="section section-advertisement">
+        <div class="container">
+          <ul class="advertisement-list">
+            <li class="advertisement-item">
+              <div class="advertisement">
+                <h4 class="advertisement-title">New Arrivalsare now in!</h4>
+                <a href="" class="advertisement-link"
+                  ><button class="advertisement-btn">Show collection</button></a
+                >
+              </div>
+            </li>
+            <li class="advertisement-item">
+              <div class="advertisement">
+                <h4 class="advertisement-title">Basic t-shirts</h4>
+                <a href="" class="advertisement-link"
+                  ><button class="advertisement-btn">$29,99</button></a
+                >
+              </div>
+            </li>
+            <li class="advertisement-item">
+              <div class="advertisement">
+                <h4 class="advertisement-title">Sale this summer</h4>
+                <a href="" class="advertisement-link"
+                  ><button class="advertisement-btn">View All</button></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-products">
+        <div class="container">
+          <div class="product-header">
+            <h2 class="section-title">Selected just for you</h2>
+            <a href="" class="section-product-link">
+              <button class="product-btn">Show more</button>
+            </a>
+          </div>
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-services">
+        <h2 class="section-title">Why should you choose us</h2>
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service">
+              <img class="service-image" src="" alt="" />
+              <h4 class="service-name">Free shipping</h4>
+              <p class="service-description">
+                All purchases over $199 are eligible forfree shipping via USPS
+                First Class Mail.
+              </p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service">
+              <img class="service-image" src="" alt="" />
+              <h4 class="service-name">Free shipping</h4>
+              <p class="service-description">
+                All payments are processed instantlyover a secure payment
+                protocol.
+              </p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service">
+              <img class="service-image" src="" alt="" />
+              <h4 class="service-name">Free shipping</h4>
+              <p class="service-description">
+                If an item arrived damaged or you'vechanged your mind, you can
+                send itback for a full refund.
+              </p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service">
+              <img class="service-image" src="" alt="" />
+              <h4 class="service-name">Free shipping</h4>
+              <p class="service-description">
+                Designed to last, each of our products hasbeen crafted with the
+                finest materials.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section section-products">
+        <div class="container">
+          <div class="product-header">
+            <h2 class="section-title">Selected just for you</h2>
+            <a href="" class="section-product-link">
+              <button class="product-btn">Show more</button>
+            </a>
+          </div>
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product">
+                <img src="" alt="" class="product-image" />
+                <h4 class="product-name">T-shirt Summer Vibes</h4>
+                <span class="product-price">#79.89</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-newsletter">
+        <label for="email" class="newsletter-label">
+          Subcribe to our newsletter andreceive exclusive offers every week
+        </label>
+        <form class="newsletter-form-group">
+          <input type="text" class="newsletter-input" />
+          <button class="newsletter-btn">Subcribe</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top container">
+        <div class="shop-info">
+          <div class="shop-info-header">
+            <img src="" alt="logo" class="brand-image" />
+            <p class="brand-name">E-Shop</p>
+          </div>
+          <p class="shop-info-description">
+            House My Brand designs clothing for the young, the old &everyone in
+            between – but most importantly, for the fashionable
+          </p>
+          <ul class="socials">
+            <li class="social-item">
+              <a href="" class="social-link"><i class="social-icon"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link"><i class="social-icon"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link"><i class="social-icon"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link"><i class="social-icon"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link"><i class="social-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shopping online</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Oder Status</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-item-link">shipping and Delivery</a>
+            </li>
+            <a href="" class="footer-item-link"
+              ><li class="footer-item">Returns</li></a
+            >
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Payment Options</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Information</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Gift Cards</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Find a store</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Newsletter</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Bacome a member</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Site feedback</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="" class="footer-item-link">store@uikit.com</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-item-link">Hotline: +1 131 138 138</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
