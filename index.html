@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Shop</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   </head>
   <body>
     <header class="header">
@@ -17,15 +14,15 @@
       </h1>
       <nav class="nav-bar">
         <ul class="nav-menu">
-          <li class="nav-item"><a class="nav-item-link" href="">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Men</a></li>
           <li class="nav-item"><a class="nav-item-link" href="">Women</a></li>
           <li class="nav-item"><a class="nav-item-link" href="">Kids</a></li>
         </ul>
       </nav>
       <div class="header-icons">
-        <i class="header-icon"></i>
-        <i class="header-icon"></i>
-        <i class="header-icon"></i>
+        <i class="icon icon-search"></i>
+        <i class="icon icon-cart"></i>
+        <i class="icon icon-user"></i>
       </div>
     </header>
     <main class="main">
@@ -41,7 +38,7 @@
           <ul class="benefit-list">
             <li class="benefit-item">
               <div class="benefit">
-                <i class="fa-solid fa-truck"></i>
+                <i class="icon icon-shipping"></i>
                 <div class="benefit-content">
                   <h4 class="benefit-title">Free shipping</h4>
                   <p class="benefit-desc">On purchase over $199</p>
@@ -50,7 +47,7 @@
             </li>
             <li class="benefit-item">
               <div class="benefit">
-                <i class="fa-regular fa-face-smile"></i>
+                <i class="icon icon-smile"></i>
                 <div class="benefit-content">
                   <h4 class="benefit-title">99% Satisfied Customers</h4>
                   <p class="benefit-desc">
@@ -61,7 +58,7 @@
             </li>
             <li class="benefit-item">
               <div class="benefit">
-                <img src="./images/dolar.svg" alt="" class="benefit-icon" />
+                <i class="icon icon-dolar"></i>
                 <div class="benefit-content">
                   <h4 class="benefit-title">Originality Guaranteed</h4>
                   <p class="benefit-desc">
@@ -80,25 +77,25 @@
             <li class="advertisement-item">
               <div class="advertisement">
                 <h4 class="advertisement-title">New Arrivalsare now in!</h4>
-                <a href="" class="advertisement-link"
-                  ><button class="advertisement-btn">Show collection</button></a
-                >
+                <a href="" class="advertisement-link">
+                  <button class="advertisement-btn">Show collection</button>
+                </a>
               </div>
             </li>
             <li class="advertisement-item">
               <div class="advertisement">
                 <h4 class="advertisement-title">Basic t-shirts</h4>
-                <a href="" class="advertisement-link"
-                  ><button class="advertisement-btn">$29,99</button></a
-                >
+                <a href="" class="advertisement-link">
+                  <button class="advertisement-btn">$29,99</button>
+                </a>
               </div>
             </li>
             <li class="advertisement-item">
               <div class="advertisement">
                 <h4 class="advertisement-title">Sale this summer</h4>
-                <a href="" class="advertisement-link"
-                  ><button class="advertisement-btn">View All</button></a
-                >
+                <a href="" class="advertisement-link">
+                  <button class="advertisement-btn">View All</button>
+                </a>
               </div>
             </li>
           </ul>
@@ -106,40 +103,46 @@
       </section>
       <section class="section section-products">
         <div class="container">
-          <div class="product-header">
+          <div class="section-header">
             <h2 class="section-title">Selected just for you</h2>
-            <a href="" class="section-product-link">
-              <button class="product-btn">Show more</button>
-            </a>
+            <a href="" class="section-product-link"> Show more </a>
           </div>
           <ul class="product-list">
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -149,7 +152,7 @@
         <ul class="service-list">
           <li class="service-item">
             <div class="service">
-              <img class="service-image" src="" alt="" />
+              <i class="icon icon-shipping"></i>
               <h4 class="service-name">Free shipping</h4>
               <p class="service-description">
                 All purchases over $199 are eligible forfree shipping via USPS
@@ -159,7 +162,7 @@
           </li>
           <li class="service-item">
             <div class="service">
-              <img class="service-image" src="" alt="" />
+              <i class="icon icon-payment"></i>
               <h4 class="service-name">Free shipping</h4>
               <p class="service-description">
                 All payments are processed instantlyover a secure payment
@@ -169,7 +172,7 @@
           </li>
           <li class="service-item">
             <div class="service">
-              <img class="service-image" src="" alt="" />
+              <i class="icon icon-dolar"></i>
               <h4 class="service-name">Free shipping</h4>
               <p class="service-description">
                 If an item arrived damaged or you'vechanged your mind, you can
@@ -179,7 +182,7 @@
           </li>
           <li class="service-item">
             <div class="service">
-              <img class="service-image" src="" alt="" />
+              <i class="icon icon-finest"></i>
               <h4 class="service-name">Free shipping</h4>
               <p class="service-description">
                 Designed to last, each of our products hasbeen crafted with the
@@ -191,7 +194,7 @@
       </section>
       <section class="section section-products">
         <div class="container">
-          <div class="product-header">
+          <div class="section-header">
             <h2 class="section-title">Selected just for you</h2>
             <a href="" class="section-product-link">
               <button class="product-btn">Show more</button>
@@ -199,41 +202,49 @@
           </div>
           <ul class="product-list">
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
             <li class="product-item">
-              <div class="product">
-                <img src="" alt="" class="product-image" />
-                <h4 class="product-name">T-shirt Summer Vibes</h4>
-                <span class="product-price">#79.89</span>
-              </div>
+              <a href="" class="product-item-link">
+                <div class="product">
+                  <img src="" alt="" class="product-image" />
+                  <h4 class="product-name">T-shirt Summer Vibes</h4>
+                  <span class="product-price">#79.89</span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
       <section class="section section-newsletter">
-        <label for="email" class="newsletter-label">
-          Subcribe to our newsletter andreceive exclusive offers every week
-        </label>
         <form class="newsletter-form-group">
+          <label for="email" class="newsletter-label">
+            Subcribe to our newsletter andreceive exclusive offers every week
+          </label>
           <input type="text" class="newsletter-input" />
           <button class="newsletter-btn">Subcribe</button>
         </form>
@@ -246,73 +257,73 @@
             <img src="" alt="logo" class="brand-image" />
             <p class="brand-name">E-Shop</p>
           </div>
-          <p class="shop-info-description">
+          <p class="shop-info-desc">
             House My Brand designs clothing for the young, the old &everyone in
             between – but most importantly, for the fashionable
           </p>
           <ul class="socials">
             <li class="social-item">
-              <a href="" class="social-link"><i class="social-icon"></i></a>
+              <a href="" class="social-link"><i class="icon icon-facebook"></i></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"><i class="social-icon"></i></a>
+              <a href="" class="social-link"><i class="icon icon-twitter"></i></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"><i class="social-icon"></i></a>
+              <a href="" class="social-link"><i class="icon icon-in"></i></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"><i class="social-icon"></i></a>
+              <a href="" class="social-link"><i class="icon icon-instagram"></i></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"><i class="social-icon"></i></a>
+              <a href="" class="social-link"><i class="icon icon-youtube"></i></a>
             </li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4 class="footer-col-title">Shopping online</h4>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Oder Status</a>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Shopping online</h4>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Oder Status</a>
             </li>
-            <li class="footer-item">
-              <a href="" class="footer-item-link">shipping and Delivery</a>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">shipping and Delivery</a>
             </li>
-            <a href="" class="footer-item-link"
-              ><li class="footer-item">Returns</li></a
-            >
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Payment Options</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-col-title">Information</h4>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Gift Cards</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Find a store</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Newsletter</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Bacome a member</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Site feedback</a>
+            <a href="" class="footer-nav-link">
+              <li class="footer-nav-item">Returns</li>
+            </a>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Payment Options</a>
             </li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4 class="footer-col-title">Contact</h4>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="" class="footer-item-link">store@uikit.com</a>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Information</h4>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Gift Cards</a>
             </li>
-            <li class="footer-item">
-              <a href="" class="footer-item-link">Hotline: +1 131 138 138</a>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Find a store</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Newsletter</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Bacome a member</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Site feedback</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Contact</h4>
+          <ul class="footer-list">
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">store@uikit.com</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="" class="footer-nav-link">Hotline: +1 131 138 138</a>
             </li>
           </ul>
         </div>
