@@ -449,19 +449,37 @@
 }
 
 .socials {
+  margin-top: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.icon-facebook {
+.icon-facebook,
+.icon-linkedin,
+.icon-instagram,
+.icon-twitter,
+.icon-youtube {
+  display: inline-block;
   width: 17px;
   height: 17px;
+  margin-right: 30px;
 }
 
 .icon-facebook {
-  background: #ffff url("./assets/images/ic-facebook.svg") no-repeat center
-    center;
+  background: #FBB03B url("./assets/images/ic-facebook.svg") no-repeat center center;
 }
+.icon-linkedin {
+  background: #FBB03B url("./assets/images/ic-linkedin.svg") no-repeat center center;
+}
+.icon-youtube {
+  background: #FBB03B url("./assets/images/ic-youtube.svg") no-repeat center center;
+}
+.icon-instagram {
+  background: #FBB03B url("./assets/images/ic-instagram.svg") no-repeat center center;
+}
+.icon-twitter {
+  background: #FBB03B url("./assets/images/ic-twitter.svg") no-repeat center center;
+}
+
 
 .footer-nav-title {
   font-size: 16px;
