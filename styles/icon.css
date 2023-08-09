@@ -9,19 +9,17 @@
   height: 50px;
   width: 50px;
 }
-.header-action-item:first-child {
-  display: none;
-}
+
 .icon-search {
-  background: transparent url("../assets/images/ic-search.svg") no-repeat top
+  background: transparent url("../assets/images/ic-search.svg") no-repeat center
     center;
 }
 .icon-user {
-  background: transparent url("../assets/images/ic-avatar.svg") no-repeat top
+  background: transparent url("../assets/images/ic-avatar.svg") no-repeat center
     center;
 }
 .icon-cart {
-  background: transparent url("../assets/images/ic-cart.svg") no-repeat top
+  background: transparent url("../assets/images/ic-cart.svg") no-repeat center
     center;
 }
 

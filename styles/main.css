@@ -115,10 +115,6 @@
   margin-top: 40px;
 }
 
-.advertisement-list {
-  display: flex;
-}
-
 .advertisement {
   background: url("../assets/images/advertisement-1.png") top center / cover
     no-repeat;
@@ -140,6 +136,11 @@
     no-repeat;
 }
 
+.advertisement .overlay {
+  fill: #333;
+  opacity: 0.5;
+  z-index: 0;
+}
 .advertisement-title {
   font-size: 24px;
   font-weight: 400;
