@@ -1,0 +1,110 @@
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 80vw;
+  }
+
+  .header {
+    position: relative;
+    padding: 20px 0;
+  }
+  .header-wrapper {
+    align-items: center;
+  }
+  .header-action-item {
+    display: flex;
+    align-items: center;
+  }
+  .header .header-logo-image {
+    content: url("../assets/images/Logo-ip11.png");
+  }
+  .header .nav-bar {
+    display: none;
+  }
+  .header .header-actions .icon-search {
+    background: none;
+  }
+  .header .header-actions .icon-cart {
+    background: transparent url("../assets/images/ic-cart-black.svg") no-repeat
+      center center;
+  }
+  .header .header-actions .icon-user {
+    background: transparent url("../assets/images/ic-user-black.svg") no-repeat
+      center center;
+  }
+  .header .header-actions .icon-menu {
+    background: transparent url("../assets/images/ic-menu.svg") no-repeat center
+      center;
+  }
+  .banner-benefit {
+    display: none;
+  }
+
+  .section-content-wrapper {
+    left: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-banner .section-title {
+    font-size: 48px;
+    line-height: 48.72px;
+  }
+  .section-banner .shop-link {
+    font-size: 14px;
+  }
+  .section-banner .icon-arrow-left {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+  */ .section-advertisement .advertisement {
+    height: 224px;
+  }
+  .advertisement-item:nth-child(2),
+  .advertisement-item:nth-child(3) {
+    margin-top: 8px;
+  }
+  .advertisement-item .advertisement-title {
+    top: 140px;
+    left: 16px;
+    font-size: 14px;
+    max-width: 124px;
+    line-height: normal;
+  }
+  .advertisement-item:nth-child(2) .advertisement-title,
+  .advertisement-item:nth-child(3) .advertisement-title {
+    max-width: 90px;
+  }
+  .advertisement-item .advertisement-btn {
+    left: 16px;
+    bottom: 16px;
+    padding: 2px 6px;
+    text-transform: capitalize;
+  }
+}
+
+
+@media screen and (max-width : 376px) {
+  .section-advertisement {
+    margin: 0;
+    padding-top: 24px;
+  }
+  .advertisement-item .advertisement {
+    height: 224px;
+  }
+
+  .section-products .section-title{
+    font-size: 18px;
+  }
+
+  .section-products .section-product-link {
+    border: none;
+  }
+  .product-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .section-newsletter {
+    display: none;
+  }
+}

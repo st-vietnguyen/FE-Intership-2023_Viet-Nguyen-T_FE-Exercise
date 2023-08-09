@@ -4,11 +4,14 @@
 
 .icon-search,
 .icon-user,
-.icon-cart {
+.icon-cart,
+.icon-menu {
   height: 50px;
   width: 50px;
 }
-
+.header-action-item:first-child {
+  display: none;
+}
 .icon-search {
   background: transparent url("../assets/images/ic-search.svg") no-repeat top
     center;
