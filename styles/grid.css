@@ -1,9 +1,11 @@
 .container {
-  width: 1152px;
+  max-width: 1152px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
@@ -13,50 +15,50 @@
   padding: 0 15px;
 }
 
-.col-1 {
+.col.col-1 {
   width: 8.33333333%;
 }
 
-.col-2 {
+.col.col-2 {
   width: 16.6666666667%;
 }
 
-.col-3 {
+.col.col-3 {
   width: 25%;
 }
 
-.col-4 {
+.col.col-4 {
   width: 33.333333%;
 }
 
-.col-5 {
+.col.col-5 {
   width: 41.666666665%;
 }
 
-.col-6 {
+.col.col-6 {
   width: 50%;
 }
 
-.col-7 {
+.col.col-7 {
   width: 58.33333333%;
 }
 
-.col-8 {
+.col.col-8 {
   width: 66.6666666667%;
 }
 
-.col-9 {
+.col.col-9 {
   width: 75%;
 }
 
-.col-10 {
+.col.col-10 {
   width: 83.3333333333%;
 }
 
-.col-11 {
+.col.col-11 {
   width: 91.666666667%;
 }
 
-.col-12 {
+.col.col-12 {
   width: 100%;
 }

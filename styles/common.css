@@ -19,5 +19,5 @@ a {
 }
 
 .text-primary {
-  color : #FBB03B;
+  color : var(--primary-color);
 }
