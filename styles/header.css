@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 48px;
+  z-index: 99;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo,
+.header-actions {
+  flex: 1;
+}
+
+.header-logo-link {
+  display: flex;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+}
