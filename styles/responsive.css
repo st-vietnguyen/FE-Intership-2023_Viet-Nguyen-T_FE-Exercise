@@ -51,7 +51,7 @@
     height: 32px;
     margin-right: 16px;
   }
-  */ .section-advertisement .advertisement {
+  .section-advertisement .advertisement {
     height: 224px;
   }
   .advertisement-item:nth-child(2),

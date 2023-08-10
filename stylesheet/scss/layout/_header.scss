@@ -7,23 +7,43 @@
   padding-top: 48px;
   z-index: 99;
 
-  &-wrapper {
+  .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &-logo , &-actions {
+  .logo,
+  .actions {
     flex: 1;
   }
 
-  &-logo-link {
+  .logo-link {
     display: flex;
-    cursor: pointer ;
+    cursor: pointer;
   }
 
-  &-actions {
+  .actions {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 24px;
+    .header-actions .icon-menu {
+      display: none;
+    }
+    .logo {
+      line-height: 5px;
+    }
+    .wrapper {
+      align-items: center;
+    }
+    .actions .action-item {
+      display: flex;
+      align-items: center;
+    }
   }
 }

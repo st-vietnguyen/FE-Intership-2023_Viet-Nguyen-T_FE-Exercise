@@ -7,19 +7,19 @@
 
   &-bottom {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: map-get($font-weight, normal );
     line-height: 18px;
-    color: #ffff;
+    color: map-get($color, white );
     text-align: center;
 
-    border-top: 2px solid #ffff;
+    border-top: 2px solid map-get($color, white );
     padding: 30px 0;
   }
   & .shop-info-desc {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: map-get($font-weight, normal );
     line-height: 21px;
-    color: #ffff;
+    color: map-get($color, white );
     max-width: 370px;
     margin: 15px 0;
   }
@@ -28,19 +28,19 @@
     display: flex;
     align-items: center;
   }
-  &-nav-title {
+  .nav-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    color: #ffff;
+    color: map-get($color, white );
   }
-  &-nav-link {
+  .nav-link {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: map-get($font-weight, normal );
     line-height: 21px;
-    color: #ffff;
+    color: map-get($color, white );
   }
-  &-nav-item {
+  .nav-item {
     margin-bottom: 20px;
     &:first-child {
       margin-top: 20px;

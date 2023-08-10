@@ -13,7 +13,7 @@
 }
 
 .advertisement .overlay {
-  fill: #333;
+  fill: map-get($color, secondary);
   opacity: 0.5;
   z-index: 0;
 }

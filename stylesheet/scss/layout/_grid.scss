@@ -22,8 +22,21 @@
 
 @media screen and (max-width: 768px) { 
   @for $i from 1 through 12 {
+    .col.col-md-#{$i} {
+      width: percentage(calc($i/12));
+    }
+  }
+}
+@media screen and (max-width: 576px) { 
+  @for $i from 1 through 12 {
     .col.col-sm-#{$i} {
       width: percentage(calc($i/12));
     }
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .container {
+    max-width: 94vw;
   }
 }

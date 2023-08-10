@@ -5,9 +5,10 @@
     font-weight: map-get($font-weight, bold );
     cursor: pointer;
   }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
 
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-}

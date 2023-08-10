@@ -1,6 +1,7 @@
 .section-banner {
   position: relative;
-  background: url("../../assets/images/banner.png") top center / cover no-repeat;
+  background: url("../../assets/images/banner.png") center center / cover
+    no-repeat;
   height: 800px;
   .section-content-wrapper {
     display: flex;
@@ -131,7 +132,7 @@
 
 .section-products,
 .section-new-products {
-  padding: 48px 0;
+  padding: 48px 0 96px;
 }
 
 .section-products {
@@ -226,7 +227,6 @@
     color: #808080;
     max-width: 80%;
   }
-  
 }
 
 .section-newsletter {
@@ -239,9 +239,6 @@
 }
 
 .newsletter-form-group {
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
   position: relative;
   display: flex;
   align-items: center;
@@ -276,4 +273,61 @@
   border-radius: 56px;
   border: none;
   background-color: map-get($color, primary);
+}
+
+@media screen and (max-width: 768px) {
+  .section-banner {
+    height: 930px;
+    .section-content-wrapper {
+      top: 40%;
+      left: 40px;
+    }
+    .banner-benefit {
+      padding: 40px 40px 48px;
+    }
+    .benefit-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .benefit-item {
+      margin-bottom: 20px;
+    }
+  }
+  .section-advertisement {
+    .advertisement {
+      height: 359px;
+      &-item:nth-child(2),
+      &-item:nth-child(3) {
+        margin-top: 20px;
+      }
+    }
+    .advertisement-item {
+      &-title {
+        font-size: 24px;
+        font-weight: map-get($font-weight, normal);
+        line-height: normal;
+      }
+      .advertisement-btn {
+        bottom: 52px;
+        text-transform: capitalize;
+      }
+    }
+    .advertisement-item:nth-child(2),
+    .advertisement-item:nth-child(3) {
+      .advertisement-title {
+        top: 55%;
+        transform: translateY(-55%);
+      }
+    }
+    .advertisement-item:nth-child(2) .tag,
+    .advertisement-item:nth-child(3) .tag {
+      top: 32%;
+    }
+    .advertisement-item:nth-child(2) {
+      padding-right: 10px;
+    }
+    .advertisement-item:nth-child(3) {
+      padding-left: 10px;
+    }
+  }
 }
