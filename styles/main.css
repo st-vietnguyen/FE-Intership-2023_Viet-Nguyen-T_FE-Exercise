@@ -78,8 +78,7 @@
   background-color: #fff;
   z-index: 2;
   border-top-right-radius: 70px;
-  padding: 38px 88px 24px
-    calc((((100vw - 1152px) / 2) + (0.695 * ((100vw - 1152px) / 2))) - 24px);
+  padding: 38px 64px 24px calc((100% - 1152px)/2 + 104px - 24px);
 }
 
 .benefit-list {
@@ -88,7 +87,7 @@
 }
 
 .benefit-item {
-  margin: 0 24px;
+  padding: 0 24px;
 }
 
 .benefit {
@@ -143,7 +142,7 @@
 }
 .advertisement-item .tag {
   position: absolute;
-  top: calc(40%);
+  top: 40%;
   left: 40px;
 }
 .advertisement-title {

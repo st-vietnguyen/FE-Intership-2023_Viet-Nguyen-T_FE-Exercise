@@ -5,7 +5,6 @@
 }
 
 .row {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
@@ -64,9 +63,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .row {
-    width: unset;
-  }
   .col.col-sm-1 {
     width: 8.33333333%;
   }

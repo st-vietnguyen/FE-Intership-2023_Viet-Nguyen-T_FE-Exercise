@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 48px;
+  z-index: 99;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo , &-actions {
+    flex: 1;
+  }
+
+  &-logo-link {
+    display: flex;
+    cursor: pointer ;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

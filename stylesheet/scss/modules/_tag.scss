@@ -1,0 +1,22 @@
+.tag {
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 700;
+
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #ff0000;
+}
+
+.product-item .tag {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+}
+
+.advertisement-item .tag {
+  position: absolute;
+  top: 40%;
+  left: 40px;
+}
+

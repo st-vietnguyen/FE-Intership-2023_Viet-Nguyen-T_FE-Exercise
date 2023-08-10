@@ -1,0 +1,6 @@
+.btn {
+  font-weight: map-get($font-weight, bold);
+  font-size: 13px;
+  color: map-get($color, secondary);
+  padding : 14px 0;
+}
