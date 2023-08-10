@@ -115,14 +115,18 @@
     text-align: center;
     font-family: Poppins;
     font-size: 10px;
-    font-weight: 700;
     line-height: normal;
+    padding: 3px 10px;
   }
   .advertisement-item:nth-child(2).col {
     padding-right: 4px;
   }
   .advertisement-item:nth-child(3).col {
     padding-left: 4px;
+  }
+  .advertisement-item .advertisement .tag {
+    left: 16px;
+    top : 50%;
   }
 
   .section-services .section-title,
@@ -154,7 +158,8 @@
   .product-item .product-price {
     font-size: 10px;
   }
-  .product-item .product .product-discount {
+  .product-item .product .tag,
+  .advertisement-item .advertisement .tag {
     width: 32px;
     height: 12px;
     display: flex;
