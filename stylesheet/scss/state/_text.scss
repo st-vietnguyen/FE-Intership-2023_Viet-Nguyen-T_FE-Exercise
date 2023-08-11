@@ -1,0 +1,7 @@
+.text-primary {
+  color : map-get($color,primary );
+}
+
+.text-red {
+  color : map-get($color, red );
+}

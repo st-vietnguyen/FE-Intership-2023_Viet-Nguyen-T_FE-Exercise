@@ -1,22 +1,13 @@
 .tag {
-  color: #ffff;
+  color: map-get($color, white );
   font-size: 12px;
   font-weight: 700;
-
+  position: absolute;
   padding: 10px 15px;
   border-radius: 20px;
-  background-color: #ff0000;
+  z-index: 1;
 }
 
-.product-item .tag {
-  position: absolute;
-  top: 24px;
-  left: 30px;
+.tag-red {
+  background-color: map-get($color, red );
 }
-
-.advertisement-item .tag {
-  position: absolute;
-  top: 40%;
-  left: 40px;
-}
-

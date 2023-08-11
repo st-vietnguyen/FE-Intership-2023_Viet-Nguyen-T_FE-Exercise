@@ -15,7 +15,7 @@
     border-top: 2px solid map-get($color, white);
     padding: 30px 0;
   }
-  & .shop-info-desc {
+  .shop-info-desc {
     font-size: 14px;
     font-weight: map-get($font-weight, normal);
     line-height: 21px;
@@ -68,27 +68,9 @@
       .footer-nav {
         margin-bottom: 24px;
       }
-    }
-    .footer-top .socials {
-      display: none;
-    }
-
-    .footer-top {
-      padding: 24px 0 48px;
-    }
-
-    .footer-top .shop-info {
-      margin-bottom: 48px;
-    }
-    .footer-top .footer-nav-title {
-      margin-bottom: 16px;
-    }
-    .footer-top .footer-nav-item {
-      margin: 6px 0;
-      font-size: 12px;
-    }
-    .footer-top .footer-nav {
-      margin-bottom: 24px;
+      .socials {
+        display: none;
+      }
     }
   }
 }

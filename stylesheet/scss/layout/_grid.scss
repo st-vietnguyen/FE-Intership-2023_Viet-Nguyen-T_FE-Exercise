@@ -21,6 +21,9 @@
 }
 
 @media screen and (max-width: 768px) { 
+  .container {
+    width: 720px;
+  }
   @for $i from 1 through 12 {
     .col.col-md-#{$i} {
       width: percentage(calc($i/12));
@@ -28,6 +31,9 @@
   }
 }
 @media screen and (max-width: 576px) { 
+  .container {
+    width: 327px;
+  }
   @for $i from 1 through 12 {
     .col.col-sm-#{$i} {
       width: percentage(calc($i/12));

@@ -11,16 +11,16 @@
 }
 
 .icon-search {
-  background: transparent url("../../assets/images/ic-search.svg") no-repeat center
-    center;
+  background: transparent url("../../assets/images/ic-search.svg") no-repeat
+    center center;
 }
 .icon-user {
-  background: transparent url("../../assets/images/ic-avatar.svg") no-repeat center
-    center;
+  background: transparent url("../../assets/images/ic-avatar.svg") no-repeat
+    center center;
 }
 .icon-cart {
-  background: transparent url("../../assets/images/ic-cart.svg") no-repeat center
-    center;
+  background: transparent url("../../assets/images/ic-cart.svg") no-repeat
+    center center;
 }
 
 .icon-arrow-left {
@@ -31,8 +31,8 @@
 }
 
 .icon-arrow-left {
-  background: map-get($color, primary ) url("../../assets/images/ic-arrow-left.svg") no-repeat
-    center center;
+  background: map-get($color, primary)
+    url("../../assets/images/ic-arrow-left.svg") no-repeat center center;
 }
 
 .icon-smile,
@@ -44,43 +44,38 @@
   border-radius: 10px;
 }
 
-
 .icon-shipping {
-  background: #fff3df url("../../assets/images/ic-shipping.svg") no-repeat center
-    center;
+  background: map-get($color, pink ) url("../../assets/images/ic-shipping.svg") no-repeat
+    center center;
 }
 .icon-smile {
-  background: #fff3df url("../../assets/images/ic-happy.svg") no-repeat center
+  background: map-get($color, pink ) url("../../assets/images/ic-happy.svg") no-repeat center
     center;
 }
 .icon-dolar {
-  background: #fff3df url("../../assets/images/ic-dolar.svg") no-repeat center
+  background: map-get($color, pink ) url("../../assets/images/ic-dolar.svg") no-repeat center
     center;
 }
 
-.service .icon-shipping-black,
-.service .icon-payment,
-.service .icon-dolar,
-.service .icon-fitnest {
+.icon-shipping-black,
+.icon-payment,
+.icon-fitnest {
   width: 68px;
   height: 68px;
   border-radius: 10px;
 }
 
 .icon-shipping-black {
-  background: #ffff url("../../assets/images/ic-free-shipping.svg") no-repeat center
-    center;
+  background: map-get($color, white ) url("../../assets/images/ic-free-shipping.svg") no-repeat
+    center center;
 }
-.service .icon-dolar {
-  background: #ffff url("../../assets/images/ic-dolar-black.svg") no-repeat center
-    center;
-}
+
 .icon-payment {
-  background: #ffff url("../../assets/images/ic-payment.svg") no-repeat center
+  background: map-get($color, white ) url("../../assets/images/ic-payment.svg") no-repeat center
     center;
 }
 .icon-fitnest {
-  background: #ffff url("../../assets/images/ic-materials.svg") no-repeat center
+  background: map-get($color, white ) url("../../assets/images/ic-materials.svg") no-repeat center
     center;
 }
 
@@ -95,17 +90,22 @@
 }
 
 .icon-facebook {
-  background: map-get($color, primary ) url("../../assets/images/ic-facebook.svg") no-repeat center center;
+  background: map-get($color, primary)
+    url("../../assets/images/ic-facebook.svg") no-repeat center center;
 }
 .icon-linkedin {
-  background: map-get($color, primary ) url("../../assets/images/ic-linkedin.svg") no-repeat center center;
+  background: map-get($color, primary)
+    url("../../assets/images/ic-linkedin.svg") no-repeat center center;
 }
 .icon-youtube {
-  background: map-get($color, primary ) url("../../assets/images/ic-youtube.svg") no-repeat center center;
+  background: map-get($color, primary) url("../../assets/images/ic-youtube.svg")
+    no-repeat center center;
 }
 .icon-instagram {
-  background: map-get($color, primary ) url("../../assets/images/ic-instagram.svg") no-repeat center center;
+  background: map-get($color, primary)
+    url("../../assets/images/ic-instagram.svg") no-repeat center center;
 }
 .icon-twitter {
-  background: map-get($color, primary ) url("../../assets/images/ic-twitter.svg") no-repeat center center;
+  background: map-get($color, primary) url("../../assets/images/ic-twitter.svg")
+    no-repeat center center;
 }
