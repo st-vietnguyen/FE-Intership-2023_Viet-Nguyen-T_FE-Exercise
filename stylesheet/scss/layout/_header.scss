@@ -1,0 +1,77 @@
+.header {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 48px;
+  z-index: 99;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo,
+  .actions {
+    flex: 1;
+  }
+
+  .logo-link {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 24px;
+    .header-actions .icon-menu {
+      display: none;
+    }
+    .logo {
+      line-height: 5px;
+    }
+    .wrapper {
+      align-items: center;
+    }
+    .actions .action-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    position: relative;
+    padding: 20px 0;
+    .logo {
+      &-image {
+        content: url("../../../assets/images/Logo-ip11.png");
+      }
+    }
+    .nav-bar {
+      display: none;
+    }
+    .actions .icon-search {
+      background: transparent url("../../../assets/images/ic-search-black.svg")
+        no-repeat center center;
+    }
+    .actions .icon-cart {
+      background: transparent url("../../../assets/images/ic-cart-black.svg")
+        no-repeat center center;
+    }
+
+    .actions .icon-user {
+      background: transparent url(".././../assets/images/ic-user-black.svg")
+        no-repeat center center;
+    }
+  }
+}

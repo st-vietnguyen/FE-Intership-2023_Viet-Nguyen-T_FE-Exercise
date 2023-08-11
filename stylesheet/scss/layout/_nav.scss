@@ -1,0 +1,14 @@
+.nav-bar {
+  flex: 1;
+  .nav-link {
+    color: map-get($color, primary );
+    font-weight: map-get($font-weight, bold );
+    cursor: pointer;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+

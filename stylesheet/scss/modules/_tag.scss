@@ -1,0 +1,13 @@
+.tag {
+  color: map-get($color, white );
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  padding: 10px 15px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.tag-red {
+  background-color: map-get($color, red );
+}

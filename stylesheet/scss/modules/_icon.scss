@@ -1,0 +1,111 @@
+.icon {
+  display: inline-block;
+}
+
+.icon-search,
+.icon-user,
+.icon-cart,
+.icon-menu {
+  height: 50px;
+  width: 50px;
+}
+
+.icon-search {
+  background: transparent url("../../assets/images/ic-search.svg") no-repeat
+    center center;
+}
+.icon-user {
+  background: transparent url("../../assets/images/ic-avatar.svg") no-repeat
+    center center;
+}
+.icon-cart {
+  background: transparent url("../../assets/images/ic-cart.svg") no-repeat
+    center center;
+}
+
+.icon-arrow-left {
+  width: 36px;
+  height: 36px;
+  margin-right: 28px;
+  border-radius: 50%;
+}
+
+.icon-arrow-left {
+  background: map-get($color, primary)
+    url("../../assets/images/ic-arrow-left.svg") no-repeat center center;
+}
+
+.icon-smile,
+.icon-dolar,
+.icon-shipping {
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.icon-shipping {
+  background: map-get($color, pink ) url("../../assets/images/ic-shipping.svg") no-repeat
+    center center;
+}
+.icon-smile {
+  background: map-get($color, pink ) url("../../assets/images/ic-happy.svg") no-repeat center
+    center;
+}
+.icon-dolar {
+  background: map-get($color, pink ) url("../../assets/images/ic-dolar.svg") no-repeat center
+    center;
+}
+
+.icon-shipping-black,
+.icon-payment,
+.icon-fitnest {
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+}
+
+.icon-shipping-black {
+  background: map-get($color, white ) url("../../assets/images/ic-free-shipping.svg") no-repeat
+    center center;
+}
+
+.icon-payment {
+  background: map-get($color, white ) url("../../assets/images/ic-payment.svg") no-repeat center
+    center;
+}
+.icon-fitnest {
+  background: map-get($color, white ) url("../../assets/images/ic-materials.svg") no-repeat center
+    center;
+}
+
+.icon-facebook,
+.icon-linkedin,
+.icon-instagram,
+.icon-twitter,
+.icon-youtube {
+  width: 17px;
+  height: 17px;
+  margin-right: 30px;
+}
+
+.icon-facebook {
+  background: map-get($color, primary)
+    url("../../assets/images/ic-facebook.svg") no-repeat center center;
+}
+.icon-linkedin {
+  background: map-get($color, primary)
+    url("../../assets/images/ic-linkedin.svg") no-repeat center center;
+}
+.icon-youtube {
+  background: map-get($color, primary) url("../../assets/images/ic-youtube.svg")
+    no-repeat center center;
+}
+.icon-instagram {
+  background: map-get($color, primary)
+    url("../../assets/images/ic-instagram.svg") no-repeat center center;
+}
+.icon-twitter {
+  background: map-get($color, primary) url("../../assets/images/ic-twitter.svg")
+    no-repeat center center;
+}
