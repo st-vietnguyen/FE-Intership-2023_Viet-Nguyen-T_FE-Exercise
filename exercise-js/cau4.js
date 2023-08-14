@@ -12,15 +12,22 @@
  */
 
 function getRandom(length, min, max) {
-  let result = [];
+  let result = [],
+    temp,
+    flag;
   for (let i = 0; i < length; i++) {
-    let temp = Math.floor(Math.random() * (max - min) + min);
-    while (result.includes(temp)) {
+    do {
+      flag = 1;
       temp = Math.floor(Math.random() * (max - min) + min);
-    }
+      for (let j = 0; j < result.length; j++) {
+        if (result[j] === temp) {
+          flag = 0;
+        }
+      }
+    } while (!flag);
     result.push(temp);
   }
   return result;
 }
 
-console.log(getRandom(3, 1, 10));
+console.log(getRandom(4, 1, 10));

@@ -10,7 +10,7 @@
  */
 
 function generateRandomHexColor() {
-  return "#" + Math.random().toString(16).slice(9);
+  return `#${Math.random().toString(16).slice(9)}`;
 }
 
 console.log(generateRandomHexColor());

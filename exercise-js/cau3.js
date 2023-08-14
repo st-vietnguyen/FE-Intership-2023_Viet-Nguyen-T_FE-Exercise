@@ -6,19 +6,14 @@
  * Returns a string of n characters truncated from the original string
  *
  * @param {string} str The string
- * @param {number} number length of new string
- * @return {number} a string of n characters truncated from the original string
+ * @param {number} num number of words of new string
+ * @return {num} a string of n characters truncated from the original string
  */
 
-function truncateString(string, number = 0) {
-  let arr = string.split(" ");
-  let result = "";
-  let subResult = [];
-  for (let i = 0; i < number; i++) {
-    subResult.push(arr[i]);
-  }
-  result = subResult.join(" ");
-  return result;
+function truncateStr(str, num = 0) {
+  let arr = str.split(" ");
+  let charEnd = str.indexOf(arr[num-1]) + arr[num-1].length;
+  return str.substring(0,charEnd);
 }
 
-console.log(truncateString("The quick brown fox jumps over the lazy dog", 4));
+console.log(truncateStr("The quick brown fox jumps over the lazy dog", 4));

@@ -16,16 +16,8 @@
 
 
 function countOccurrenceSubstring(str, subStr) {
-  let arr = str.split(" ");
-  let count = 0;
-  arr.forEach((element) => {
-    if (element.toLowerCase() === subStr.toLowerCase()) {
-      count++;
-    }
-  });
+  let count = str.split(subStr).length - 1;
   return count;
 }
 
-console.log(
-  countOccurrenceSubstring("The quick brown fox jumps over the lazy dog", "fox jumbs")
-);
+console.log(countOccurrenceSubstring("The quick brown fox jumps over the lazy dog", "lazy dog"));

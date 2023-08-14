@@ -13,11 +13,8 @@
 
 function maximumSumOfConsecutive(arr) {
   let result = 0;
-  for (let i = 0; i < arr.length; i++) {
-    let sum = arr[i] + arr[i + 1];
-    if (sum > result) {
-      result = sum;
-    }
+  for (let i = 0; i < arr.length - 1; i++) {
+    result  = Math.max(arr[i] + arr[i + 1],result);
   }
   return result;
 }

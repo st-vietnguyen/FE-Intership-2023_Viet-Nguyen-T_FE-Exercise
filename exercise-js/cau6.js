@@ -14,9 +14,8 @@
  */
 
 function sumOfNumber(arr, num) {
-  let arrValid = arr.filter((n) => n % num === 0);
-  let result = arrValid.reduce((acc, cur) => acc + cur, 0);
+  let result = arr.reduce((acc, cur) => (cur % num === 0) ? acc + cur : acc, 0);
   return result;
 }
 
-console.log(sumOfNumber([2, 3, 3], 2));
+console.log(sumOfNumber([1, 2, 3, 4, 5, 6, 7], 2));
