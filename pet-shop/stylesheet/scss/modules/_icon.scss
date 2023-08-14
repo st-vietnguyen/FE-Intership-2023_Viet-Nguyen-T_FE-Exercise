@@ -1,0 +1,40 @@
+.icon {
+  display: inline-block;
+}
+
+.icon-cart {
+  background: transparent url("../../assets/images/ic-cart.svg") no-repeat
+    center center;
+}
+
+.icon-dot {
+  width: 8px;
+  height: 8px;
+  background: transparent url("../../assets/images/ic-dot.svg") no-repeat
+    center center;
+  margin-right: 15px;
+}
+
+.icon-email {
+  width: 22px;
+  height: 22px;
+  background: transparent url("../../assets/images/ic-mail.svg") no-repeat
+  center center;
+  margin-right: 18px;
+}
+
+.icon-phone {
+  width: 25px;
+  height: 25px;
+  background: transparent url("../../assets/images/ic-phone.svg") no-repeat
+  center center;
+  margin-right: 18px;
+}
+
+.icon-address {
+  width: 20px;
+  height: 20px;
+  background: transparent url("../../assets/images/ic-position.svg") no-repeat
+  center center;
+  margin-right: 18px;
+}

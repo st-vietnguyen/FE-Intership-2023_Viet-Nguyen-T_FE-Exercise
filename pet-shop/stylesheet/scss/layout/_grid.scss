@@ -1,0 +1,33 @@
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col {
+  padding: 0 20px;
+}
+@for $i from 1 through 12 {
+  .col.col-#{$i} {
+    width: percentage(calc($i/12));
+  }
+}
+
+.row-col-5 {
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
