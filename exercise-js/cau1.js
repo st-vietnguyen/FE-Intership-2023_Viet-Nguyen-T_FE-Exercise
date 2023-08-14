@@ -3,6 +3,16 @@
 // Output: the new string
 // Ex: ("FE", 4) => 'FEFEFEFE'
 
+/**
+ * Returns string repeat a specified times.
+ *
+ * @param {string} str the string.
+ * @param {number} num The specified times
+ * @return {string} str repeat to the num
+ */
+
+
+
 function repeatString(str, num) {
   return str.repeat(num);
 }

@@ -3,6 +3,7 @@
 // that inherits from the 'Book' class and includes an additional property for book price. Override
 // the display method to include the book price. Create an instance of the 'Ebook' class and display its details.
 
+
 class Book {
   constructor(title, author, publicYear) {
     this.title = title;

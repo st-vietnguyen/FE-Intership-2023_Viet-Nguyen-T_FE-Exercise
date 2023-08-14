@@ -2,7 +2,15 @@
 // Input: (string, number)
 // Output: new string
 
-function truncate(string, number = 0) {
+/**
+ * Returns a string of n characters truncated from the original string
+ *
+ * @param {string} str The string
+ * @param {number} number length of new string
+ * @return {number} a string of n characters truncated from the original string
+ */
+
+function truncateString(string, number = 0) {
   let arr = string.split(" ");
   let result = "";
   let subResult = [];
@@ -13,4 +21,4 @@ function truncate(string, number = 0) {
   return result;
 }
 
-console.log(truncate("The quick brown fox jumps over the lazy dog", 4));
+console.log(truncateString("The quick brown fox jumps over the lazy dog", 4));
