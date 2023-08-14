@@ -1,0 +1,38 @@
+.product {
+  display: flex;
+
+  &-content-left {
+    position: relative;
+    .badge {
+      top: 15px;
+      left: 15px;
+    }
+  }
+  &-content-right {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-name {
+    color: map-get($color, secondary);
+    font-size: 16px;
+    font-weight: map-get($font-weight, bold);
+    line-height: 19.2px;
+  }
+  &-desc {
+    color: map-get($color, product-text);
+    font-size: 14px;
+    font-weight: map-get($font-weight, light);
+    line-height: 16.8px; /* 120% */
+  }
+  &-price {
+    color: map-get($color, black);
+    font-weight: map-get($font-weight, light);
+    line-height: 16.8px; /* 120% */
+  }
+  .icon-cart {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,146 @@
+.home-page {
+  .section-banner {
+    // height: 574px;
+    background: url("../../../../pet-shop/assets/images/banner.png") center
+      center / cover no-repeat;
+
+    .section-content-wrapper {
+      position: relative;
+      height: 574px;
+      padding: 83px 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    .banner-content {
+      max-width: 520px;
+    }
+    .section-title {
+      color: map-get($color, white);
+      font-size: 62px;
+      font-weight: map-get($font-weight, bold-light);
+      line-height: 74.4px;
+    }
+    .banner-desc {
+      color: #fff;
+      font-weight: map-get($font-weight, light);
+      line-height: 16.8px;
+      padding: 38px 0;
+    }
+  }
+  .section-category {
+    padding-top: 40px;
+    .category {
+      &-name {
+        text-align: center;
+        margin-top: 24px;
+        color: map-get($color, secondary);
+        font-size: 20px;
+        font-weight: map-get($font-weight, bold);
+        line-height: 24px;
+      }
+    }
+  }
+  .section-title-wrapper {
+    text-align: center;
+    .section-title {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      font-size: 34px;
+      font-weight: map-get($font-weight, bold);
+      line-height: 40.8px;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 33.33%;
+        height: 2px;
+        background-color: map-get($color, primary);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+  }
+
+  .section-trending {
+    padding-top: 70px;
+    .filter {
+      &-title {
+        font-size: 18px;
+        font-weight: map-get($font-weight, bold);
+        line-height: 21.6px; /* 120% */
+        background-color: map-get($color, primary);
+        border-radius: 10px 10px 0 0;
+      }
+      &-title,
+      &-item {
+        padding: 20px 25px;
+      }
+      &-item {
+        position: relative;
+        background-color: map-get($color, grey-light);
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: calc(100% - 50px);
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: map-get($color, grey);
+        }
+      }
+      &-link {
+        font-size: 16px;
+        font-weight: map-get($font-weight, light);
+        line-height: 19px;
+        color: map-get($color, secondary);
+
+        &.active {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: map-get($font-weight, bold);
+          line-height: 19.2px;
+        }
+      }
+    }
+  }
+
+  .section-trending {
+    .icon-cart {
+      background: transparent
+        url("../../../../pet-shop/assets/images/ic-cart-16.png") no-repeat
+        center center;
+      margin-right: 5px;
+    }
+
+    .product-item:nth-child(3),
+    .product-item:nth-child(4) {
+      margin-top: 20px;
+    }
+  }
+
+  .section-gallery {
+    padding: 70px 0;
+    .gallery-item:nth-child(odd) .gallery{
+      .gallery-image {
+        margin-bottom: 16px;
+      }
+    }
+    .gallery-item:nth-child(even) .gallery{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      .gallery-name {
+        margin-bottom: 16px;
+        
+      }
+    }
+    .gallery {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 50px;
+  width: max-content;
+  cursor: pointer;
+}
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+.btn-outline-primary {
+  color : map-get($color, secondary );
+  background-color: map-get($color, white );
+  border: 1px solid map-get($color, primary );
+}
+.btn-primary {
+  color : map-get($color, white );
+  background-color: map-get($color, primary );
+}

@@ -1,0 +1,30 @@
+.header {
+  &-wrapper {
+    padding: 18px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-item {
+      margin: 0 16px;
+    }
+    .nav-link {
+      color: map-get($color, secondary);
+      font-weight: map-get($font-weight, normal);
+    }
+    .nav-link.active {
+      color: map-get($color, primary);
+    }
+    .nav-link:hover {
+      color: map-get($color, primary);
+    }
+  }
+  .icon-cart {
+    height: 24px;
+    width: 24px;
+  }
+}
