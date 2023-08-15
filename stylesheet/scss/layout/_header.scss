@@ -26,6 +26,23 @@
   .actions {
     display: flex;
     justify-content: flex-end;
+    .action-item{
+      cursor: pointer;
+      position: relative;
+      .cart-quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right : -8px;
+        top : -5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: map-get($color, primary );
+        color : map-get($color, white );
+      }
+    }
   }
 }
 

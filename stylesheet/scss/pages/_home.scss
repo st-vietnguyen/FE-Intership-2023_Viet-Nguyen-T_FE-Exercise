@@ -162,16 +162,6 @@
     border: 1px solid #c4c4c4;
     background-color: map-get($color, white);
   }
-  .product:hover,
-  .section-product-link:hover {
-    .product {
-      overflow: hidden;
-    }
-    .product-image {
-      transform: rotate3d(1, 1, 1, 360deg);
-      transition: all 0.5s;
-    }
-  }
 }
 
 .section-title {
