@@ -303,15 +303,67 @@ h3 {
   line-height: 24px;
   color: #333;
 }
-.product-price {
+.product-image {
+  width: 100%;
+  object-fit: cover;
+}
+.product-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.product .icon-cart {
+  visibility: hidden;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.product .price-offical {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: #333;
 }
-.product-image {
+.product .price-offical.price-sale {
+  color: #ff0000;
+}
+.product .cost {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #CECECE;
+}
+.product .cost::after {
+  content: "";
+  height: 1px;
+  background-color: #CECECE;
+  position: absolute;
+  top: 50%;
+  left: 0;
   width: 100%;
-  object-fit: cover;
+}
+.product-image-wrapper {
+  position: relative;
+}
+.product:hover {
+  cursor: pointer;
+}
+.product:hover .product-image-wrapper::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(27, 26, 26, 0.4);
+}
+.product:hover .icon-cart {
+  visibility: unset;
 }
 
 .container {
@@ -490,6 +542,23 @@ h3 {
 .header .actions {
   display: flex;
   justify-content: flex-end;
+}
+.header .actions .action-item {
+  cursor: pointer;
+  position: relative;
+}
+.header .actions .action-item .cart-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #FBB03B;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -773,15 +842,6 @@ h3 {
   border-radius: 39px;
   border: 1px solid #c4c4c4;
   background-color: #fff;
-}
-.section-products .product:hover .product,
-.section-products .section-product-link:hover .product {
-  overflow: hidden;
-}
-.section-products .product:hover .product-image,
-.section-products .section-product-link:hover .product-image {
-  transform: rotate3d(1, 1, 1, 360deg);
-  transition: all 0.5s;
 }
 
 .section-title {
