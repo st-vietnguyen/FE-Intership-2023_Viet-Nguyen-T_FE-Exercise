@@ -111,30 +111,30 @@ var products = JSON.parse(localStorage.getItem('products')) ?? [];
 productList.forEach((productElement) => {
   productElement.addEventListener('click', function () {
     var productIndex = productElement.getAttribute('data-index');
-    var product = products.find(function(prd) {
+    var product = products.find(function (prd) {
       return prd.id === Number.parseInt(productIndex);
     });
-    if(!product) {
+    if (!product) {
       product = JSON.parse(JSON.stringify(data[productIndex]));
       product.quantity = 1;
       products.push(product);
-    }else {
+    } else {
       product.quantity += 1;
     }
-    sumProductOfCart(cartQuantity,products);
+    sumProductOfCart(cartQuantity, products);
     localStorage.setItem('products', JSON.stringify(products));
   });
 });
 
-sumProductOfCart(cartQuantity,products);
+sumProductOfCart(cartQuantity, products);
 
-function sumProductOfCart(cartQuantityElement,products) {
+function sumProductOfCart(cartQuantityElement, products) {
   var sumOfProduct = products.reduce((acc, cur) => {
     return acc + cur.quantity;
   }, 0);
-  if(sumOfProduct !== 0) {
-    cartQuantityElement.innerHTML = sumOfProduct; 
-  }else {
+  if (sumOfProduct !== 0) {
+    cartQuantityElement.innerHTML = sumOfProduct;
+  } else {
     cartQuantity.style.display = 'none';
   }
 }
