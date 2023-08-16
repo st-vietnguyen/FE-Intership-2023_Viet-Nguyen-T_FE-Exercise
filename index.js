@@ -107,31 +107,34 @@ newProductContainer.appendChild(renderListProduct());
 var productList = document.querySelectorAll('.product-list .product');
 var cartQuantity = document.querySelector('.cart-quantity');
 var products = JSON.parse(localStorage.getItem('products')) ?? [];
-var isExist = 0;
 
 productList.forEach((productElement) => {
   productElement.addEventListener('click', function () {
     var productIndex = productElement.getAttribute('data-index');
-    var product = data[productIndex];
-    products.find(function (prd) {
-      if (prd.id === Number.parseInt(productIndex)) {
-        isExist = 1;
-        prd.quantum += 1;
-      }
+    var product = products.find(function(prd) {
+      return prd.id === Number.parseInt(productIndex);
     });
-    if (isExist === 0) {
-      products.push({
-        ...product,
-        quantum: 1,
-      });
+    if(!product) {
+      product = JSON.parse(JSON.stringify(data[productIndex]));
+      product.quantity = 1;
+      products.push(product);
+    }else {
+      product.quantity += 1;
     }
-    cartQuantity.innerHTML = products.reduce((acc, cur) => {
-      return acc + cur.quantum;
-    }, 0);
+    sumProductOfCart(cartQuantity,products);
     localStorage.setItem('products', JSON.stringify(products));
   });
 });
 
-cartQuantity.innerHTML = products.reduce((acc, cur) => {
-  return acc + cur.quantum;
-}, 0);
+sumProductOfCart(cartQuantity,products);
+
+function sumProductOfCart(cartQuantityElement,products) {
+  var sumOfProduct = products.reduce((acc, cur) => {
+    return acc + cur.quantity;
+  }, 0);
+  if(sumOfProduct !== 0) {
+    cartQuantityElement.innerHTML = sumOfProduct; 
+  }else {
+    cartQuantity.style.display = 'none';
+  }
+}
