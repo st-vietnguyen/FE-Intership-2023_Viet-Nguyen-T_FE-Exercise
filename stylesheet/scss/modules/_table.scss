@@ -14,4 +14,7 @@ td {
   text-align: center;
   border-bottom: 1px solid #ccc;
 }
+th {
+  font-weight: map-get($font-weight, bold );
+}
 

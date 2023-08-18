@@ -29,9 +29,9 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    top : 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 1;
   }
@@ -42,20 +42,20 @@
     color: map-get($color, secondary);
   }
   .price-offical.price-sale {
-    color : map-get($color,red )
+    color: map-get($color, red);
   }
   .cost {
     position: relative;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    color : map-get($color, grey);
+    color: map-get($color, grey);
     &::after {
-      content: "";
+      content: '';
       height: 1px;
-      background-color: map-get($color, grey );
+      background-color: map-get($color, grey);
       position: absolute;
-      top : 50%;
+      top: 50%;
       left: 0;
       width: 100%;
     }
@@ -64,15 +64,27 @@
     position: relative;
   }
   &:hover {
-     cursor: pointer;
+    cursor: pointer;
     .product-image-wrapper::after {
-      content: "";
-      top : 0 ; 
+      content: '';
+      top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       position: absolute;
       background-color: rgba(27, 26, 26, 0.4);
+    }
+    .disabled.product-image-wrapper::after {
+      content: 'OUT OF STOCK';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: map-get($color, white);
+      font-size: 20px;
+      font-weight: map-get($font-weight, normal);
+    }
+    .disabled .icon-cart {
+      display: none;
     }
     .icon-cart {
       visibility: unset;

@@ -9,20 +9,50 @@
     padding-top: 30px;
   }
 
-  .btn-plus , .btn-minus , .btn-delete {
+  .btn-plus,
+  .btn-minus,
+  .btn-delete {
     cursor: pointer;
-    background-color: map-get($color, primary );
-    color : map-get($color, white );
+    background-color: map-get($color, primary);
+    color: map-get($color, white);
     border: none;
     outline: none;
     border-radius: 6px;
   }
-  .btn-plus , .btn-minus {
+  .btn-plus,
+  .btn-minus {
     width: 20px;
     height: 20px;
   }
 
   .btn-delete {
     padding: 10px 20px;
+  }
+  .product-total {
+    width: 80px;
+  }
+  .sold-out-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+
+  .sold-out-image {
+    width: 200px;
+    height: 200px;
+  }
+  .cart-total-price {
+    font-size: 20px;
+  }
+  .back-link {
+    color: map-get($color, secondary);
+    font-weight: map-get($font-weight, bold);
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    &:hover {
+      color: map-get($color, primary);
+    }
   }
 }
