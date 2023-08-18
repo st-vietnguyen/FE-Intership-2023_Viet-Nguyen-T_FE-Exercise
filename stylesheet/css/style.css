@@ -366,6 +366,25 @@ h3 {
   visibility: unset;
 }
 
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  vertical-align: baseline;
+}
+
+th,
+td {
+  vertical-align: middle;
+  padding: 10px 0;
+  max-width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
 .container {
   max-width: 1152px;
   width: 100%;
@@ -1127,6 +1146,14 @@ h3 {
     left: 8px;
     top: 10px;
   }
+}
+.cart-page .table .product-image {
+  width: 100px;
+  height: 100px;
+}
+.cart-page .cart-total-price {
+  display: inline-block;
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

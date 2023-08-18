@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+thead th {
+  vertical-align: baseline;
+}
+th,
+td {
+  vertical-align: middle;
+  padding: 10px 0;
+  max-width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
