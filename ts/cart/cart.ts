@@ -114,7 +114,8 @@ const renderCart = () => {
                       </div>
                     </td>
                     <td class="product-total">$${(
-                      product.price * product.quantity
+                      caculeteDiscountPrice(product.price, product.discount) *
+                      product.quantity
                     ).toFixed(2)}</td>
                     <td><button class="btn-delete" data-index=${
                       product.id
@@ -136,14 +137,14 @@ const renderCart = () => {
   displayQuantityOfCart();
 };
 
+const caculeteDiscountPrice = (price: number, discount: number) => {
+  return discount ? price - (price * discount) / 100 : price;
+};
+
 const caculateTotalCart = (productList: CartItemType[]) => {
   let total: number = productList.reduce(
     (acc: number, cur: CartItemType) =>
-      acc +
-      (cur.discount
-        ? cur.price - (cur.price * cur.discount) / 100
-        : cur.price) *
-        cur.quantity,
+      acc + caculeteDiscountPrice(cur.price, cur.discount) * cur.quantity,
     0
   );
   return total;

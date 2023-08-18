@@ -82,7 +82,8 @@ const renderCart = () => {
                         data-index=${product.id}>+</button>
                       </div>
                     </td>
-                    <td class="product-total">$${(product.price * product.quantity).toFixed(2)}</td>
+                    <td class="product-total">$${(caculeteDiscountPrice(product.price, product.discount) *
+            product.quantity).toFixed(2)}</td>
                     <td><button class="btn-delete" data-index=${product.id}">Xóa</button></td>
                   </tr>
               
@@ -98,12 +99,11 @@ const renderCart = () => {
     addEventDeleteProduct(productList);
     displayQuantityOfCart();
 };
+const caculeteDiscountPrice = (price, discount) => {
+    return discount ? price - (price * discount) / 100 : price;
+};
 const caculateTotalCart = (productList) => {
-    let total = productList.reduce((acc, cur) => acc +
-        (cur.discount
-            ? cur.price - (cur.price * cur.discount) / 100
-            : cur.price) *
-            cur.quantity, 0);
+    let total = productList.reduce((acc, cur) => acc + caculeteDiscountPrice(cur.price, cur.discount) * cur.quantity, 0);
     return total;
 };
 renderCart();
