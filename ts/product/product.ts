@@ -91,9 +91,12 @@ const handleAddToCart = (
 };
 
 const updateQuantityOfCart = (products: CartItemType[]) => {
+  console.log(products);
+  
   const cartQuantityElement: HTMLElement =
     document.querySelector('.cart-quantity');
   let sumOfProduct = sumProductOfCart(products);
+  cartQuantityElement.style.visibility = 'unset';
   cartQuantityElement.innerHTML = sumOfProduct.toString();
 };
 
@@ -107,7 +110,7 @@ export const displayQuantityOfCart = () => {
   if (sumOfProduct !== 0) {
     cartQuantityElement.innerHTML = sumOfProduct.toString();
   } else {
-    cartQuantityElement.style.display = 'none';
+    cartQuantityElement.style.visibility = 'hidden';
   }
 };
 

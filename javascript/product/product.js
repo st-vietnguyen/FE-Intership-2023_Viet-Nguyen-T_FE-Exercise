@@ -75,8 +75,10 @@ const handleAddToCart = (products, btnElement, data) => {
     localStorage.setItem('cart', JSON.stringify(products));
 };
 const updateQuantityOfCart = (products) => {
+    console.log(products);
     const cartQuantityElement = document.querySelector('.cart-quantity');
     let sumOfProduct = sumProductOfCart(products);
+    cartQuantityElement.style.visibility = 'unset';
     cartQuantityElement.innerHTML = sumOfProduct.toString();
 };
 export const displayQuantityOfCart = () => {
@@ -87,7 +89,7 @@ export const displayQuantityOfCart = () => {
         cartQuantityElement.innerHTML = sumOfProduct.toString();
     }
     else {
-        cartQuantityElement.style.display = 'none';
+        cartQuantityElement.style.visibility = 'hidden';
     }
 };
 const sumProductOfCart = (products) => {
