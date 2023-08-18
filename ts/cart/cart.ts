@@ -1,12 +1,10 @@
 import { CartItemType } from './cart.interface';
 import { displayQuantityOfCart } from '../product/product.js';
-import fetchData from '../product/fetchData.js';
 
-fetchData();
 const addEventDeleteProduct = (productList: CartItemType[]) => {
   const btnDeleteList = document.querySelectorAll('.btn-delete');
 
-  btnDeleteList.forEach((btn : HTMLButtonElement) => {
+  btnDeleteList.forEach((btn: HTMLButtonElement) => {
     btn.addEventListener('click', (e: Event) => {
       handleDeleteProduct(productList, e);
     });
@@ -141,7 +139,11 @@ const renderCart = () => {
 const caculateTotalCart = (productList: CartItemType[]) => {
   let total: number = productList.reduce(
     (acc: number, cur: CartItemType) =>
-      acc + ( cur.discount ? cur.price - (cur.price * cur.discount) / 100 : 0) * cur.quantity,
+      acc +
+      (cur.discount
+        ? cur.price - (cur.price * cur.discount) / 100
+        : cur.price) *
+        cur.quantity,
     0
   );
   return total;

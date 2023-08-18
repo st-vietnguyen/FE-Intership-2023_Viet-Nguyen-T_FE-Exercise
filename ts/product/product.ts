@@ -1,9 +1,7 @@
 import { CartItemType } from '../cart/cart.interface';
 import { ProductProps } from './product.interface';
 
-
 const render = (data: ProductProps[]) => {
-
   if (data && data.length) {
     const productContainer: HTMLElement = document.querySelector(
       '.section-products .container'
@@ -19,7 +17,9 @@ const render = (data: ProductProps[]) => {
         return `<li class="product-item col-3 col col-md-6">
         <a class="product-link">
           <div class="product">
-            <div class="product-image-wrapper ${product.status === 'Out of stock'?'disabled' : ''}">
+            <div class="product-image-wrapper ${
+              product.status === 'Out of stock' ? 'disabled' : ''
+            }">
               ${
                 product.discount
                   ? `<tag class="tag tag-red">-${product.discount}%</tag>`
@@ -96,7 +96,8 @@ const updateQuantityOfCart = (products: CartItemType[]) => {
 };
 
 export const displayQuantityOfCart = () => {
-  const products:CartItemType[] = JSON.parse(localStorage.getItem('cart')) || [];
+  const products: CartItemType[] =
+    JSON.parse(localStorage.getItem('cart')) || [];
   const cartQuantityElement: HTMLElement =
     document.querySelector('.cart-quantity');
   let sumOfProduct = sumProductOfCart(products);

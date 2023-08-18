@@ -7,8 +7,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const fetchData = () => __awaiter(void 0, void 0, void 0, function* () {
-    const response = yield fetch('../data.json');
-    console.log(response);
+const fetchData = (url, callback) => __awaiter(void 0, void 0, void 0, function* () {
+    yield fetch(url)
+        .then((res) => res.json())
+        .then((result) => callback(result));
 });
 export default fetchData;

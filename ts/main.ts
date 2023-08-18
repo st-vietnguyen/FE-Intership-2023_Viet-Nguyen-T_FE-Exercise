@@ -1,4 +1,7 @@
-import render from "./product/product.js";
-import data from "./data.js";
+import render from './product/product.js';
+import fetchData from './product/fetchData.js';
+import { ProductProps } from './product/product.interface.js';
 
-render(data);
+fetchData('../data.json', (data: ProductProps[]) => {
+  render(data);
+});

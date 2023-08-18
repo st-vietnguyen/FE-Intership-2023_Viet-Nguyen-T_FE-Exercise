@@ -1,3 +1,5 @@
-import render from "./product/product.js";
-import data from "./data.js";
-render(data);
+import render from './product/product.js';
+import fetchData from './product/fetchData.js';
+fetchData('../data.json', (data) => {
+    render(data);
+});

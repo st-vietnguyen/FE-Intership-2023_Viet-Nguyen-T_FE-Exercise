@@ -1,6 +1,4 @@
 import { displayQuantityOfCart } from '../product/product.js';
-import fetchData from '../product/fetchData.js';
-fetchData();
 const addEventDeleteProduct = (productList) => {
     const btnDeleteList = document.querySelectorAll('.btn-delete');
     btnDeleteList.forEach((btn) => {
@@ -101,7 +99,11 @@ const renderCart = () => {
     displayQuantityOfCart();
 };
 const caculateTotalCart = (productList) => {
-    let total = productList.reduce((acc, cur) => acc + (cur.discount ? cur.price - (cur.price * cur.discount) / 100 : 0) * cur.quantity, 0);
+    let total = productList.reduce((acc, cur) => acc +
+        (cur.discount
+            ? cur.price - (cur.price * cur.discount) / 100
+            : cur.price) *
+            cur.quantity, 0);
     return total;
 };
 renderCart();
