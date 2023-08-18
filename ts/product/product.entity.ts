@@ -7,7 +7,7 @@ class Product implements ProductProps {
   image: string;
   discount: number;
   quantity: number;
-  status: 'Available' | 'Out of stock';
+  status: 0 | 1;
   constructor(product: ProductProps) {
     const { id, name, price, image, discount , status } = product;
     this.id = id;

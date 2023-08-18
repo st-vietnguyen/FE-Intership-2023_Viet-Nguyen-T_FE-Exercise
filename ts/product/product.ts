@@ -1,9 +1,10 @@
-import { CartItemType } from '../cart/cart.interface';
-import { ProductProps } from './product.interface';
-import fetchData from '../product/fetchData.js';
+import { CartItemType } from '../cart/cart.interface.js';
+import { ProductProps } from './product.interface.js';
+import fetchData from '../api/fetchData.js';
+import Cart, { CartItem } from '../cart/cart.entity.js';
 
 const render = async () => {
-  const data = await fetchData('../data.json')
+  const data = await fetchData('../data.json');
   if (data && data.length) {
     const productContainer: HTMLElement = document.querySelector(
       '.section-products .container'
@@ -20,7 +21,7 @@ const render = async () => {
         <a class="product-link">
           <div class="product">
             <div class="product-image-wrapper ${
-              product.status === 'Out of stock' ? 'disabled' : ''
+              product.status === 0 ? 'disabled' : ''
             }">
               ${
                 product.discount
@@ -86,40 +87,28 @@ const handleAddToCart = (
     product.quantity += 1;
   }
   render();
-  updateQuantityOfCart(products);
+  displayQuantityOfCart();
   localStorage.setItem('cart', JSON.stringify(products));
-};
-
-const updateQuantityOfCart = (products: CartItemType[]) => {
-  console.log(products);
-  
-  const cartQuantityElement: HTMLElement =
-    document.querySelector('.cart-quantity');
-  let sumOfProduct = sumProductOfCart(products);
-  cartQuantityElement.style.visibility = 'unset';
-  cartQuantityElement.innerHTML = sumOfProduct.toString();
 };
 
 export const displayQuantityOfCart = () => {
   const products: CartItemType[] =
     JSON.parse(localStorage.getItem('cart')) || [];
+  const cart = new Cart(
+    products.map((prd) => {
+      return new CartItem(prd);
+    })
+  );
   const cartQuantityElement: HTMLElement =
     document.querySelector('.cart-quantity');
-  let sumOfProduct = sumProductOfCart(products);
+  let sumOfProduct = cart.calcTotalProduct();
 
   if (sumOfProduct !== 0) {
+    cartQuantityElement.style.visibility = 'unset';
     cartQuantityElement.innerHTML = sumOfProduct.toString();
   } else {
     cartQuantityElement.style.visibility = 'hidden';
   }
-};
-
-const sumProductOfCart = (products: CartItemType[]) => {
-  let sumOfProduct = products.reduce((acc: number, cur: CartItemType) => {
-    return acc + cur.quantity;
-  }, 0);
-
-  return sumOfProduct;
 };
 
 export default render;
