@@ -1,4 +1,15 @@
-const render = (data) => {
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+import fetchData from '../product/fetchData.js';
+const render = () => __awaiter(void 0, void 0, void 0, function* () {
+    const data = yield fetchData('../data.json');
     if (data && data.length) {
         const productContainer = document.querySelector('.section-products .container');
         const newProductContainer = document.querySelector('.section-new-products .container');
@@ -35,7 +46,7 @@ const render = (data) => {
         displayQuantityOfCart();
         addEventCartClick(data);
     }
-};
+});
 const addEventCartClick = (data) => {
     var _a;
     const products = (_a = JSON.parse(localStorage.getItem('cart'))) !== null && _a !== void 0 ? _a : [];
@@ -59,7 +70,7 @@ const handleAddToCart = (products, btnElement, data) => {
     else {
         product.quantity += 1;
     }
-    render(data);
+    render();
     updateQuantityOfCart(products);
     localStorage.setItem('cart', JSON.stringify(products));
 };

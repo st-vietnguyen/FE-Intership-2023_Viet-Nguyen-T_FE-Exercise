@@ -1,7 +1,9 @@
 import { CartItemType } from '../cart/cart.interface';
 import { ProductProps } from './product.interface';
+import fetchData from '../product/fetchData.js';
 
-const render = (data: ProductProps[]) => {
+const render = async () => {
+  const data = await fetchData('../data.json')
   if (data && data.length) {
     const productContainer: HTMLElement = document.querySelector(
       '.section-products .container'
@@ -83,7 +85,7 @@ const handleAddToCart = (
   } else {
     product.quantity += 1;
   }
-  render(data);
+  render();
   updateQuantityOfCart(products);
   localStorage.setItem('cart', JSON.stringify(products));
 };

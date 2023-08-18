@@ -127,7 +127,7 @@ const renderCart = () => {
               .join('')}
           </tbody> 
     </table>
-      <span class="cart-total-price">TOTAL: $${caculateTotalCart(
+      <span class="cart-total-price btn btn-primary">TOTAL: $${caculateTotalCart(
         productList
       ).toFixed(2)}</span>
   `;

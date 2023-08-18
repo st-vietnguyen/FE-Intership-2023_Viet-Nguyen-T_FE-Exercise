@@ -92,7 +92,7 @@ const renderCart = () => {
         .join('')}
           </tbody> 
     </table>
-      <span class="cart-total-price">TOTAL: $${caculateTotalCart(productList).toFixed(2)}</span>
+      <span class="cart-total-price btn btn-primary">TOTAL: $${caculateTotalCart(productList).toFixed(2)}</span>
   `;
     addEventDecreaseProduct(productList);
     addEventIncreaseProduct(productList);

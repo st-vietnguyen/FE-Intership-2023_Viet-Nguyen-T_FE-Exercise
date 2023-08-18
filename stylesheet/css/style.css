@@ -1161,5 +1161,20 @@ td {
   display: inline-block;
   padding-top: 30px;
 }
+.cart-page .btn-plus, .cart-page .btn-minus, .cart-page .btn-delete {
+  cursor: pointer;
+  background-color: #FBB03B;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+.cart-page .btn-plus, .cart-page .btn-minus {
+  width: 20px;
+  height: 20px;
+}
+.cart-page .btn-delete {
+  padding: 10px 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
