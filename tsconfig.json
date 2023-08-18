@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "outDir": "./javascript",
+    "lib": [ "ES6", "DOM" ],
+    "target": "ES6"
+  }
+}
