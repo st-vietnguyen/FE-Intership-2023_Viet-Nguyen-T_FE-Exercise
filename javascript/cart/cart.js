@@ -1,14 +1,16 @@
 import { displayQuantityOfCart } from '../product/product.js';
+import fetchData from '../product/fetchData.js';
+fetchData();
 const addEventDeleteProduct = (productList) => {
     const btnDeleteList = document.querySelectorAll('.btn-delete');
     btnDeleteList.forEach((btn) => {
-        btn.addEventListener('click', (element) => {
-            handleDeleteProduct(productList, element);
+        btn.addEventListener('click', (e) => {
+            handleDeleteProduct(productList, e);
         });
     });
 };
-const handleDeleteProduct = (productList, element) => {
-    let productIndex = Number.parseInt(element.target.dataset.index);
+const handleDeleteProduct = (productList, e) => {
+    let productIndex = Number.parseInt(e.target.dataset.index);
     let newProductList = productList.filter((prd) => prd.id !== productIndex);
     localStorage.setItem('cart', JSON.stringify(newProductList));
     renderCart();
@@ -16,13 +18,13 @@ const handleDeleteProduct = (productList, element) => {
 export const addEventDecreaseProduct = (productList) => {
     const btnMinusList = document.querySelectorAll('.btn-minus');
     btnMinusList.forEach((btn) => {
-        btn.addEventListener('click', (element) => {
-            handleDecreaseProduct(productList, element);
+        btn.addEventListener('click', (e) => {
+            handleDecreaseProduct(productList, e);
         });
     });
 };
-const handleDecreaseProduct = (productList, element) => {
-    let productIndex = Number.parseInt(element.target.dataset.index);
+const handleDecreaseProduct = (productList, e) => {
+    let productIndex = Number.parseInt(e.target.dataset.index);
     let product = productList.find((prd) => prd.id === productIndex);
     product.quantity -= 1;
     if (product.quantity < 1) {
@@ -37,13 +39,13 @@ const handleDecreaseProduct = (productList, element) => {
 const addEventIncreaseProduct = (productList) => {
     const btnPlusList = document.querySelectorAll('.btn-plus');
     btnPlusList.forEach((btn) => {
-        btn.addEventListener('click', (element) => {
-            handleIncreaseProduct(productList, element);
+        btn.addEventListener('click', (e) => {
+            handleIncreaseProduct(productList, e);
         });
     });
 };
-const handleIncreaseProduct = (productList, element) => {
-    let productIndex = Number.parseInt(element.target.dataset.index);
+const handleIncreaseProduct = (productList, e) => {
+    let productIndex = Number.parseInt(e.target.dataset.index);
     let product = productList.find((prd) => prd.id === productIndex);
     product.quantity += 1;
     localStorage.setItem('cart', JSON.stringify(productList));
@@ -99,7 +101,7 @@ const renderCart = () => {
     displayQuantityOfCart();
 };
 const caculateTotalCart = (productList) => {
-    let total = productList.reduce((acc, cur) => acc + (cur.price - (cur.price * cur.discount) / 100) * cur.quantity, 0);
+    let total = productList.reduce((acc, cur) => acc + (cur.discount ? cur.price - (cur.price * cur.discount) / 100 : 0) * cur.quantity, 0);
     return total;
 };
 renderCart();

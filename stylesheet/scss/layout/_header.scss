@@ -7,6 +7,12 @@
   padding-top: 48px;
   z-index: 99;
 
+  &.header-cart-page {
+    position: relative;
+    margin-bottom: 48px;
+    padding: 24px 0;
+    background-color: black;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;

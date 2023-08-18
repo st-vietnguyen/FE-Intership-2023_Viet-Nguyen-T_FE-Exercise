@@ -1,9 +1,6 @@
 import { CartItemType } from '../cart/cart.interface';
-import { fetchData } from './fetchData';
 import { ProductProps } from './product.interface';
 
-
-// fetchData('../../data.json');
 
 const render = (data: ProductProps[]) => {
 

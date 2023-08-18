@@ -1,4 +1,3 @@
-// fetchData('../../data.json');
 const render = (data) => {
     if (data && data.length) {
         const productContainer = document.querySelector('.section-products .container');
