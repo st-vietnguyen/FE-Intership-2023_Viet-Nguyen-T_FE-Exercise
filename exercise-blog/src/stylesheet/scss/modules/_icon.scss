@@ -1,0 +1,33 @@
+.icon {
+  display: inline-block;
+  width: 13px;
+  height: 15px;
+}
+
+.icon-like {
+  background: transparent url('../../assets/images/ic-like.svg') center center /
+    cover no-repeat;
+}
+.icon-comment {
+  background: transparent url('../../assets/images/ic-comment.svg') center
+    center / cover no-repeat;
+}
+
+.icon-facebook {
+  background: url('../../assets/images/ic-facebook.svg') center center / cover
+    no-repeat;
+}
+.icon-youtube {
+  background: url('../../assets/images/ic-youtube.svg') center center / cover
+    no-repeat;
+}
+
+.icon-instagram {
+  background: url('../../assets/images/ic-instagram.svg') center center / cover
+    no-repeat;
+}
+
+.icon-twitter {
+  background: url('../../assets/images/ic-twitter.svg') center center / cover
+    no-repeat;
+}
