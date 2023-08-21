@@ -288,6 +288,14 @@ html {
   font-weight: 500;
 }
 
+.text-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 .home-page .section-banner {
   height: 447px;
   background-color: #FFC017;
