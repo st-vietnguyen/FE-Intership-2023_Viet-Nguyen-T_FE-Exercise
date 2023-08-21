@@ -1,0 +1,29 @@
+.header {
+  background-color: map-get($color, primary);
+  padding: 16px 0;
+  border-bottom: 1px solid map-get($color,secondary);
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  .option-list {
+    display: flex;
+  }
+  .option-item:not(:last-child) {
+    margin-right: 36px;
+  }
+  .option-item {
+    .tag {
+      padding: 12px 18px;
+    }
+  }
+  .option-link {
+    color : map-get($color, secondary);
+    font-size: 14px;
+    font-weight: map-get($font-weight, normal );
+  }
+}
